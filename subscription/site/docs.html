@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Документация — M5 Service</title>
+<link rel="stylesheet" href="/assets/style.css">
+<script defer src="/m5s.js" data-website-id="c97518e3-07a5-4b62-ba81-0599d86f8396"></script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="/">M5<span>Service</span></a>
+  <nav><a href="/">Главная</a><a href="/login">Войти</a></nav>
+</div></header>
+<main class="wrap">
+  <h1>Документация</h1>
+
+  <h2>1. Установка счётчика</h2>
+  <p>Скрипт подключается одной строкой перед закрывающим <code>&lt;/head&gt;</code>:</p>
+<pre><code>&lt;script defer src="https://media.m5service.ws/m5s.js"
+        data-website-id="ВАШ-ID"&gt;&lt;/script&gt;</code></pre>
+  <p>Идентификатор сайта берётся в кабинете: <em>Настройки → Сайты → Код отслеживания</em>.</p>
+
+  <h2>2. Проверка</h2>
+  <p>Откройте сайт и зайдите в раздел «Сейчас на сайте». Если посетитель виден —
+  счётчик работает. Если нет, проверьте, что скрипт не заблокирован расширением
+  браузера и что домен в настройках сайта совпадает с фактическим.</p>
+
+  <h2>3. Свои события</h2>
+  <p>Кроме просмотров можно отправлять свои события — например отправку формы:</p>
+<pre><code>m5s.track('form-sent');
+m5s.track('purchase', { plan: 'base', amount: 1200 });</code></pre>
+
+  <h2>4. Ограничения беты</h2>
+  <ul>
+    <li>до 1 млн событий в месяц на сайт;</li>
+    <li>хранение 6 месяцев;</li>
+    <li>один пользователь на аккаунт.</li>
+  </ul>
+
+  <h2>5. Данные</h2>
+  <p>События пишутся в нашу базу в России. Сторонние cookie не ставятся,
+  посетители между сайтами не связываются. Выгрузка — из кабинета в CSV.</p>
+</main>
+<footer class="wrap"><p>M5 Service · <a href="/">главная</a> · <a href="/login">кабинет</a></p></footer>
+</body>
+</html>

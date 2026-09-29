@@ -1,0 +1,670 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "IN-BG",
+      "port": 10810,
+      "listen": "127.0.0.1",
+      "protocol": "vless",
+      "settings": {
+        "clients": [],
+        "decryption": "none"
+      },
+      "sniffing": {
+        "enabled": true,
+        "routeOnly": true,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
+          "mode": "packet-up",
+          "path": "/collect/v2/e/",
+          "extra": {
+            "xPaddingKey": "_dc",
+            "xPaddingHeader": "X-Cache",
+            "xPaddingMethod": "tokenish",
+            "uplinkHTTPMethod": "GET",
+            "xPaddingObfsMode": true,
+            "xPaddingPlacement": "queryInHeader"
+          }
+        }
+      }
+    },
+    {
+      "tag": "IN-DE",
+      "port": 10811,
+      "listen": "127.0.0.1",
+      "protocol": "vless",
+      "settings": {
+        "clients": [],
+        "decryption": "none"
+      },
+      "sniffing": {
+        "enabled": true,
+        "routeOnly": true,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
+          "mode": "packet-up",
+          "path": "/collect/v2/e/",
+          "extra": {
+            "xPaddingKey": "_dc",
+            "xPaddingHeader": "X-Cache",
+            "xPaddingMethod": "tokenish",
+            "uplinkHTTPMethod": "GET",
+            "xPaddingObfsMode": true,
+            "xPaddingPlacement": "queryInHeader"
+          }
+        }
+      }
+    },
+    {
+      "tag": "IN-EE",
+      "port": 10812,
+      "listen": "127.0.0.1",
+      "protocol": "vless",
+      "settings": {
+        "clients": [],
+        "decryption": "none"
+      },
+      "sniffing": {
+        "enabled": true,
+        "routeOnly": true,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
+          "mode": "packet-up",
+          "path": "/collect/v2/e/",
+          "extra": {
+            "xPaddingKey": "_dc",
+            "xPaddingHeader": "X-Cache",
+            "xPaddingMethod": "tokenish",
+            "uplinkHTTPMethod": "GET",
+            "xPaddingObfsMode": true,
+            "xPaddingPlacement": "queryInHeader"
+          }
+        }
+      }
+    },
+    {
+      "tag": "IN-FI",
+      "port": 10813,
+      "listen": "127.0.0.1",
+      "protocol": "vless",
+      "settings": {
+        "clients": [],
+        "decryption": "none"
+      },
+      "sniffing": {
+        "enabled": true,
+        "routeOnly": true,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
+          "mode": "packet-up",
+          "path": "/collect/v2/e/",
+          "extra": {
+            "xPaddingKey": "_dc",
+            "xPaddingHeader": "X-Cache",
+            "xPaddingMethod": "tokenish",
+            "uplinkHTTPMethod": "GET",
+            "xPaddingObfsMode": true,
+            "xPaddingPlacement": "queryInHeader"
+          }
+        }
+      }
+    },
+    {
+      "tag": "IN-IT",
+      "port": 10814,
+      "listen": "127.0.0.1",
+      "protocol": "vless",
+      "settings": {
+        "clients": [],
+        "decryption": "none"
+      },
+      "sniffing": {
+        "enabled": true,
+        "routeOnly": true,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
+          "mode": "packet-up",
+          "path": "/collect/v2/e/",
+          "extra": {
+            "xPaddingKey": "_dc",
+            "xPaddingHeader": "X-Cache",
+            "xPaddingMethod": "tokenish",
+            "uplinkHTTPMethod": "GET",
+            "xPaddingObfsMode": true,
+            "xPaddingPlacement": "queryInHeader"
+          }
+        }
+      }
+    },
+    {
+      "tag": "IN-MD",
+      "port": 10815,
+      "listen": "127.0.0.1",
+      "protocol": "vless",
+      "settings": {
+        "clients": [],
+        "decryption": "none"
+      },
+      "sniffing": {
+        "enabled": true,
+        "routeOnly": true,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
+          "mode": "packet-up",
+          "path": "/collect/v2/e/",
+          "extra": {
+            "xPaddingKey": "_dc",
+            "xPaddingHeader": "X-Cache",
+            "xPaddingMethod": "tokenish",
+            "uplinkHTTPMethod": "GET",
+            "xPaddingObfsMode": true,
+            "xPaddingPlacement": "queryInHeader"
+          }
+        }
+      }
+    },
+    {
+      "tag": "IN-NL",
+      "port": 10816,
+      "listen": "127.0.0.1",
+      "protocol": "vless",
+      "settings": {
+        "clients": [],
+        "decryption": "none"
+      },
+      "sniffing": {
+        "enabled": true,
+        "routeOnly": true,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
+          "mode": "packet-up",
+          "path": "/collect/v2/e/",
+          "extra": {
+            "xPaddingKey": "_dc",
+            "xPaddingHeader": "X-Cache",
+            "xPaddingMethod": "tokenish",
+            "uplinkHTTPMethod": "GET",
+            "xPaddingObfsMode": true,
+            "xPaddingPlacement": "queryInHeader"
+          }
+        }
+      }
+    },
+    {
+      "tag": "IN-PL",
+      "port": 10817,
+      "listen": "127.0.0.1",
+      "protocol": "vless",
+      "settings": {
+        "clients": [],
+        "decryption": "none"
+      },
+      "sniffing": {
+        "enabled": true,
+        "routeOnly": true,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
+          "mode": "packet-up",
+          "path": "/collect/v2/e/",
+          "extra": {
+            "xPaddingKey": "_dc",
+            "xPaddingHeader": "X-Cache",
+            "xPaddingMethod": "tokenish",
+            "uplinkHTTPMethod": "GET",
+            "xPaddingObfsMode": true,
+            "xPaddingPlacement": "queryInHeader"
+          }
+        }
+      }
+    },
+    {
+      "tag": "IN-US",
+      "port": 10818,
+      "listen": "127.0.0.1",
+      "protocol": "vless",
+      "settings": {
+        "clients": [],
+        "decryption": "none"
+      },
+      "sniffing": {
+        "enabled": true,
+        "routeOnly": true,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
+          "mode": "packet-up",
+          "path": "/collect/v2/e/",
+          "extra": {
+            "xPaddingKey": "_dc",
+            "xPaddingHeader": "X-Cache",
+            "xPaddingMethod": "tokenish",
+            "uplinkHTTPMethod": "GET",
+            "xPaddingObfsMode": true,
+            "xPaddingPlacement": "queryInHeader"
+          }
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "OUT-BG",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "port": 443,
+            "users": [
+              {
+                "id": "8d5771eb-92df-402f-8aac-73a330a45345",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ],
+            "address": "88.210.52.208"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "shortId": "a6376fab",
+          "spiderX": "/",
+          "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+          "serverName": "www.samsung.com",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "OUT-DE",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "port": 6443,
+            "users": [
+              {
+                "id": "8d5771eb-92df-402f-8aac-73a330a45345",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ],
+            "address": "88.210.52.208"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "shortId": "2af729f0",
+          "spiderX": "/",
+          "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+          "serverName": "samsung.com",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "OUT-EE",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "port": 8443,
+            "users": [
+              {
+                "id": "8d5771eb-92df-402f-8aac-73a330a45345",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ],
+            "address": "88.210.52.208"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "shortId": "f4a35ed9",
+          "spiderX": "/",
+          "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+          "serverName": "www.asus.com",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "OUT-FI",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "port": 2087,
+            "users": [
+              {
+                "id": "8d5771eb-92df-402f-8aac-73a330a45345",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ],
+            "address": "88.210.52.208"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "shortId": "8be11e5c",
+          "spiderX": "/",
+          "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+          "serverName": "www.logitech.com",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "OUT-IT",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "port": 7443,
+            "users": [
+              {
+                "id": "8d5771eb-92df-402f-8aac-73a330a45345",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ],
+            "address": "88.210.52.208"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "shortId": "94a30a55",
+          "spiderX": "/",
+          "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+          "serverName": "www.samsung.com",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "OUT-MD",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "port": 9443,
+            "users": [
+              {
+                "id": "8d5771eb-92df-402f-8aac-73a330a45345",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ],
+            "address": "88.210.52.208"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "shortId": "833d98e5",
+          "spiderX": "/",
+          "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+          "serverName": "samsung.com",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "OUT-NL",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "port": 2083,
+            "users": [
+              {
+                "id": "8d5771eb-92df-402f-8aac-73a330a45345",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ],
+            "address": "88.210.52.208"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "shortId": "94807b68",
+          "spiderX": "/",
+          "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+          "serverName": "www.asus.com",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "OUT-PL",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "port": 2096,
+            "users": [
+              {
+                "id": "8d5771eb-92df-402f-8aac-73a330a45345",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ],
+            "address": "88.210.52.208"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "shortId": "cf32ac33",
+          "spiderX": "/",
+          "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+          "serverName": "www.logitech.com",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "OUT-US",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "port": 2053,
+            "users": [
+              {
+                "id": "8d5771eb-92df-402f-8aac-73a330a45345",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ],
+            "address": "88.210.52.208"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "shortId": "a6376fab",
+          "spiderX": "/",
+          "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+          "serverName": "www.samsung.com",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "DIRECT",
+      "protocol": "freedom"
+    },
+    {
+      "tag": "BLOCK",
+      "protocol": "blackhole"
+    }
+  ],
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "inboundTag": [
+          "IN-BG"
+        ],
+        "outboundTag": "OUT-BG"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "IN-DE"
+        ],
+        "outboundTag": "OUT-DE"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "IN-EE"
+        ],
+        "outboundTag": "OUT-EE"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "IN-FI"
+        ],
+        "outboundTag": "OUT-FI"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "IN-IT"
+        ],
+        "outboundTag": "OUT-IT"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "IN-MD"
+        ],
+        "outboundTag": "OUT-MD"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "IN-NL"
+        ],
+        "outboundTag": "OUT-NL"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "IN-PL"
+        ],
+        "outboundTag": "OUT-PL"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "IN-US"
+        ],
+        "outboundTag": "OUT-US"
+      }
+    ]
+  },
+  "_Comment": "Выход через московский мост 88.210.52.208 (порт=страна): с origin в СПб ноды US/DE/IT/EE напрямую недоступны — проверено дважды 22.09.2026."
+}

@@ -1,0 +1,2 @@
+# /etc/cron.d/m5-geo-mirror — зеркало гео раз в 6 часов
+0 */6 * * * root /usr/local/sbin/m5-geo-mirror.sh >/dev/null 2>&1

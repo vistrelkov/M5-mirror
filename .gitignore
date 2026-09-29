@@ -1,0 +1,9 @@
+.env
+*.env
+!.env.example
+panel.env
+!panel.env.example
+state.json
+pgdata/
+*.pem
+*.log

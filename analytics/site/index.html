@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M5 Service — веб-аналитика без лишнего</title>
+<meta name="description" content="Лёгкий счётчик посещаемости: события в реальном времени, свой сервер, без продажи данных.">
+<link rel="stylesheet" href="/assets/style.css">
+<script defer src="/m5s.js" data-website-id="c97518e3-07a5-4b62-ba81-0599d86f8396"></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="/">M5<span>Service</span></a>
+    <nav><a href="/docs.html">Документация</a><a href="/login">Войти</a></nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <h1>Статистика сайта,<br>которая живёт на вашем сервере</h1>
+    <p class="lead">Считаем просмотры, источники переходов и события. Данные лежат
+    в вашей базе, счётчик весит 2 КБ и не тормозит страницу.</p>
+    <p class="beta">Сейчас закрытая бета — подключаем по приглашениям.</p>
+  </section>
+
+  <section class="wrap cols">
+    <div><h3>Поток в реальном времени</h3>
+      <p>События приходят на <code>/collect</code> сразу, без буферизации.
+      Видно, что происходит на сайте прямо сейчас.</p></div>
+    <div><h3>Ничего лишнего в браузере</h3>
+      <p>Без сторонних cookie и профилирования посетителей. Одна строка скрипта,
+      никаких SDK и менеджеров тегов.</p></div>
+    <div><h3>Свои данные</h3>
+      <p>База ваша, выгрузка в любой момент. Мы не перепродаём трафик
+      и не строим рекламные сегменты.</p></div>
+  </section>
+
+  <section class="wrap install">
+    <h2>Как подключить</h2>
+    <p>Вставьте строку перед <code>&lt;/head&gt;</code> — и данные пойдут:</p>
+<pre><code>&lt;script defer src="https://media.m5service.ws/m5s.js"
+        data-website-id="ВАШ-ID"&gt;&lt;/script&gt;</code></pre>
+    <p>Подробнее — в <a href="/docs.html">документации</a>.</p>
+  </section>
+
+  <section class="wrap price">
+    <h2>Тарифы</h2>
+    <table>
+      <tr><th>План</th><th>События в месяц</th><th>Хранение</th><th>Цена</th></tr>
+      <tr><td>Бета</td><td>до 1 млн</td><td>6 месяцев</td><td>бесплатно</td></tr>
+      <tr><td>Базовый</td><td>до 10 млн</td><td>12 месяцев</td><td>по запросу</td></tr>
+      <tr><td>Свой сервер</td><td>без ограничений</td><td>сколько нужно</td><td>по запросу</td></tr>
+    </table>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>M5 Service · веб-аналитика · <a href="/docs.html">документация</a> · <a href="/login">кабинет</a></p>
+  <p class="small">Вопросы по подключению — через форму в кабинете.</p>
+</footer>
+</body>
+</html>
